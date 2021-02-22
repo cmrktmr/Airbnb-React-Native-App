@@ -11,8 +11,8 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Go Near</Text>
         <Pressable
           style={styles.button}
-          onPress={() => console.warn((data: 'Explore btn clicked'))}>
-          <Text>Explore Nearby stays</Text>
+          onPress={() => console.warn(('Explore btn clicked'))}>
+          <Text style={styles.buttonText}>Explore Nearby stays</Text>
         </Pressable>
       </ImageBackground>
     </View>
