@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
   image: {
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#fff',
     width: 200,
-    marginTop: 15,
+    marginTop: 25,
     marginLeft: 25,
     height: 40,
     borderRadius: 10,
@@ -26,6 +26,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  searchButton: {
+    backgroundColor: '#fff',
+    height: 60,
+    width: Dimensions.get('screen').width - 20,
+    borderRadius: 30,
+    marginHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 20,
+    elevation: 1,
+    position:'absolute',
+   
+
+  },
+  searchButtonText: {
     fontSize: 16,
     fontWeight: 'bold',
   },
