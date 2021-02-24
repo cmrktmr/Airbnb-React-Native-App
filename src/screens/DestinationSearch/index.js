@@ -3,7 +3,7 @@ import {View, TextInput, FlatList, Text} from 'react-native';
 import styles from './style';
 
 import searchResults from '../../../assets/data/search';
-import Entypo from "react-native-vector-icons/Entypo"
+import Entypo from 'react-native-vector-icons/Entypo';
 const DestinationSeacrhScreen = (props) => {
   const [inputText, setInputText] = useState('');
 
@@ -22,7 +22,10 @@ const DestinationSeacrhScreen = (props) => {
         data={searchResults}
         renderItem={({item}) => (
           <View style={styles.row}>
-            <Text>{item.description}</Text>
+            <View style={styles.iconContainer}>
+              <Entypo name={'location-pin'} size={35} />
+            </View>
+            <Text style={styles.locationText}>{item.description}</Text>
           </View>
         )}
       />
