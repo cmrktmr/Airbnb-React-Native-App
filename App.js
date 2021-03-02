@@ -14,19 +14,14 @@ import Post from './src/components/Post';
 import feed from './assets/data/feed';
 import DestinationSeacrhScreen from './src/screens/DestinationSearch'
 import GuestsScreen from './src/screens/Guests'
-
+import 'react-native-gesture-handler'
+import Router from './src/navigation/Router'
 const post1 = feed[0];
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        {/* <HomeScreen/>*/}
-        {/* <Post post={post1} />*/}
-     {/* <SearchResultsScreen/>*/}  
-    {/* <DestinationSeacrhScreen/>*/}
-    <GuestsScreen/>
-      </SafeAreaView>
+    <Router/>
     </>
   );
 };
